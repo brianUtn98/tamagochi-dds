@@ -56,7 +56,7 @@ public boolean puedeJugar(){
    * String estado . Esta es una solución muy rústica y por lo general una mala decisión. Para saber cómo está una mascota vamos a tener un método lleno de if's con comparaciones al estilo if(estado=="Contenta") cosa que casi siempre se quiere evitar, para eso proponemos la segunda solución.
    * El estado es un objeto "intercambiable" que la mascota conoce. Esta es la solución que nos va a servir para plantear los siguientes requerimientos, ya que al tener un           objeto que haga de estado, podemos delegarle algunos comportamientos.
    
-Los estados tienen comportamiento diferente para una misma acción, pero nosotros no podemos conocerlos (¡Lo dice el enunciado!), entonces queremos objetos que entiendan el mismo mensaje indistintamente para nosotros y sean ellos los responsables del comportamiento en cada caso. Para esto podemos plantear una inferaz Estado que será el contrato para los mensajes que enterá cada estado.
+Los estados tienen comportamiento diferente para una misma acción, pero nosotros no podemos conocerlos (¡Lo dice el enunciado!), entonces queremos objetos que entiendan el mismo mensaje indistintamente para nosotros y sean ellos los responsables del comportamiento en cada caso. Para esto podemos plantear una inferaz Estado que será el contrato para los mensajes que entenderá cada estado.
 Para lograr la diferencia de comportamiento, para cada mensaje, vamosa a definir comer(),jugar() y puedeJugar() al estado además de a la mascota. Así, si la mascota quiere jugar(), le delegará esta acción a su estado.
 
 ```java
