@@ -216,5 +216,5 @@ Con esto queda resuelto el ejercicio Tamagotchi!
 
 Como pueden ver, la solución usa sintaxis de Java. Sin embargo, es probable que se haya podido entender sin problemas, ya que lo evaluado acá no es el lenguaje, sino el uso del paradigma de objetos. 
 #### Aclaracion: 
-Por qué los estados son una clase si no tienen estado? (teniendo en cuenta de que el tiempo de mal humor y la cantidad de veces que jugó podrían ser conocidos por la mascota) Por que en Java no hay object y esta solución está pensada en Java.
+Por qué los estados son una clase si no tienen estado? (teniendo en cuenta de que el tiempo de mal humor y la cantidad de veces que jugó podrían ser conocidos por la mascota) Porque en Java no hay objects y esta solución está pensada en Java.
 
