@@ -30,3 +30,9 @@ Esto quiere decir que está prohibido hacer comparaciones del tipo estado.equals
 2. Responder las siguientes preguntas:
     * Indique en palabras los pasos necesarios para incorporar un nuevo estado “Triste” en la mascota, de manera que quede listo para funcionar.
     * Indique cómo resolvería para darles de comer a todas las mascotas que están dentro de una colección “mascotas”.
+
+
+Solucion
+```wollok
+method comer()
+```
