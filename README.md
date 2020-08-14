@@ -71,12 +71,15 @@ class Mascota{
 int nivelContento;
 Estado estado
 public void comer(){
+   estado.comer()
 }
 
 public void jugar(){
+   estado.comer()
 }
 
 public boolean puedeJugar(){
+   estado.comer()
 }
 
 
