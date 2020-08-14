@@ -32,7 +32,22 @@ Esto quiere decir que está prohibido hacer comparaciones del tipo estado.equals
     * Indique cómo resolvería para darles de comer a todas las mascotas que están dentro de una colección “mascotas”.
 
 
-Solucion
-```wollok
-method comer()
+## Solucion
+1. Lo primero que haremos es pensar en una clase Mascota, que tendrá un nivelContento (un número entero mayor o igual que 0) y conocerá los mensajes comer(),jugar() y puedeJugar(). Este último lo podemos modelar con un retorno booleano, ya que espero una respuesta por Sí o por no.
+```java
+Class Mascota{
+int nivelContento;
+
+public void comer(){
+}
+
+public void jugar(){
+}
+
+public boolean puedeJugar(){
+}
+
+}
 ```
+
+<img src="t1.png">
