@@ -218,3 +218,7 @@ Como pueden ver, la solución usa sintaxis de Java. Sin embargo, es probable que
 #### Aclaracion: 
 Por qué los estados son una clase si no tienen estado? (teniendo en cuenta de que el tiempo de mal humor y la cantidad de veces que jugó podrían ser conocidos por la mascota) Porque en Java no hay objects y esta solución está pensada en Java.
 
+Para pensar:
+¿Qué pasaría si pudiera bajarle el nivel de contenta a la mascota? ¿Qué debería cambiar?
+
+
