@@ -35,7 +35,7 @@ Esto quiere decir que está prohibido hacer comparaciones del tipo estado.equals
 ## Solucion
 1. Lo primero que haremos es pensar en una clase Mascota, que tendrá un nivelContento (un número entero mayor o igual que 0) y conocerá los mensajes comer(),jugar() y puedeJugar(). Este último lo podemos modelar con un retorno booleano, ya que espero una respuesta por Sí o por no.
 ```java
-Class Mascota{
+class Mascota{
 int nivelContento;
 
 public void comer(){
@@ -60,14 +60,14 @@ Los estados tienen comportamiento diferente para una misma acción, pero nosotro
 Para lograr la diferencia de comportamiento, para cada mensaje, vamosa a definir comer(),jugar() y puedeJugar() al estado además de a la mascota. Así, si la mascota quiere jugar(), le delegará esta acción a su estado.
 
 ```java
-Interface Estado{
+interface Estado{
 public void jugar()
 public void comer()
 public boolean puedeJugar()
 }
 
 ...
-Class Mascota{
+class Mascota{
 int nivelContento;
 Estado estado
 public void comer(){
@@ -88,7 +88,7 @@ public boolean puedeJugar(){
 Todavía no terminamos, si nos fijamos, hay algunos requerimientos que necesitan conocer el tiempo para poder decidir sobre qué va a pasar. Vamos a suponer que tenemos un método genérico minutosDeEspera que nos devuelve cúantos minutos lleva una Mascota esperando desde cierto tiempo. Para este requerimiento, agregaremos algún atributo de tiempo a la Clase MalHumor que será seteada en el momento que la mascota esté de mal humor (pasando por contrusctor a la clase MalHumor).
 
 ```java
-Class MalHumor implements Estado{
+class MalHumor implements Estado{
 LocalTime tiempo;
 ...
 
@@ -99,13 +99,13 @@ public int minutosDeEspera(LocalTime desde){...}
 Ahora sí podemos seguir con el resto de los requerimientos. Pasamos al limpio todo, y completamos según corresponda los métodos.
 
 ```java
-Interface Estado{
+interface Estado{
    public void jugar()
    public void comer()
    public boolean puedeJugar()
 }
 
-Class Contenta implements Estado{
+class Contenta implements Estado{
 int vecesQueJugo;
    public Contenta(){
    vecesQueJugo = 0;
@@ -125,7 +125,7 @@ int vecesQueJugo;
    }
 }
 
-Class Hambrienta implements Estado{
+class Hambrienta implements Estado{
    public void jugar(Mascota mascota){
       mascota.cambiarEstado( new MalHumor(now()) );
    }
@@ -137,7 +137,7 @@ Class Hambrienta implements Estado{
    }
 }
 
-Class MalHumor implements Estado{
+class MalHumor implements Estado{
    LocalTime tiempo;
    
    public MalHumor(LocalTime tiempo){
@@ -158,7 +158,7 @@ Class MalHumor implements Estado{
    }
 }
 
-Class Mascota{
+class Mascota{
    int nivelContento;
    Estado estado
    
