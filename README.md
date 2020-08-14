@@ -220,5 +220,6 @@ Por qué los estados son una clase si no tienen estado? (teniendo en cuenta de q
 
 Para pensar:
 ¿Qué pasaría si pudiera bajarle el nivel de contenta a la mascota? ¿Qué debería cambiar?
+¿Qué otra forma se te ocurre de resolver los estados sin utilizar una interface?
 
 
